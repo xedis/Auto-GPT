@@ -113,7 +113,7 @@ jobs:
 
       - name: Run pytest tests with coverage
         run: |
-          pytest -s tests/integration/challenges/basic_abilities/test_write_file.py
+          pytest tests/integration/challenges/basic_abilities/test_write_file.py
         env:
           CI: true
           PROXY: ${{ secrets.PROXY }}
